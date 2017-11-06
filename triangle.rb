@@ -14,7 +14,22 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  p= [a,b,c].sort
+  if p[0]==p[1] then
+    if p[1]==p[2] then
+      :equilateral
+    else
+      :isosceles
+    end
+  else
+    if p[1]==p[2] then
+      :isosceles
+    else
+      :scalene
+    end
+  end
+
+
 end
 
 # Error class used in part 2.  No need to change this code.
