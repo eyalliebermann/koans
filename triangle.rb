@@ -15,6 +15,10 @@
 #
 def triangle(a, b, c)
   p= [a,b,c].sort
+
+  raise TriangleError unless p[0]>0
+  raise TriangleError unless p[0]+p[1] >p[2]
+
   if p[0]==p[1] then
     if p[1]==p[2] then
       :equilateral
